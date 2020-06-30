@@ -1,0 +1,24 @@
+int x = 4; // dirction 1 
+int y = 5;// dirction 2 
+void setup()
+{
+  pinMode(x, OUTPUT);
+  pinMode(y, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(x, 1);// motor will move in dirction 1
+ digitalWrite(y, 0);
+ delay(1000); 
+ digitalWrite(x,0);// motor will stop
+ digitalWrite(y, 0);
+ delay(1000); 
+ digitalWrite(y, 1);// motor will move in dirction 2
+ digitalWrite(x,0);
+ delay(1000); 
+ digitalWrite(y, 0);// motor will stop
+ digitalWrite(x,0);
+ delay(1000); 
+  
+}
